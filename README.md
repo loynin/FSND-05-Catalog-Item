@@ -56,13 +56,13 @@ Before running the code or create the tables, there will be a need to create
 database first. In this project, follow these steps in order to successfully 
 run the code of the project:
    
-   a. Create database and tables by running: 
+   -- a. Create database and tables by running: 
    		'python database_setup.py'
-   b. Create sample data by running:
+   -- b. Create sample data by running:
    		'python lotofitem.py'    
-   c. Run the project by using command:
+   -- c. Run the project by using command:
       	'python project.py'
-   d. Visit the website by http://localhost:5000/cagetories/
+   -- d. Visit the website by http://localhost:5000/cagetories/
    	  for admin (the ability to add, edit, or delete categories) visit 
    	   http://localhost:5000/categories/admin
 
