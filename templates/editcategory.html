@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class='set_content_width set_content_background'>    
+    <table>
+        <tr>
+            <th style="vertical-align:top">
+                <div class='category_display'>
+                <h1>Edit Category</h1>
+                <form action= "{{url_for('editCategory', categoryID = category.id)}}" method = 'POST'>
+                <p>Category Name:</p>
+                    <input type = 'text' size='30' name = 'name' placeholder = '{{category.name}}'>
+                    <p>
+                    <input type='submit' value='Edit'>
+                    <a href= '{{url_for('category_admin')}}'>Cancel</a>
+                    </p>
+                </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+{% endblock %}

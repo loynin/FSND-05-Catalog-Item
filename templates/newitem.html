@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <div class='set_content_width set_content_background'>    
+    <table>
+        <tr>
+            <th style="vertical-align:top">
+                <div class='category_display'>
+                <h1>New Item</h1>
+                <form action="{{url_for('newItem' , categoryID = categoryID)}}" method = 'post'>
+                <p>Title:</p>
+                    <input type='text' size='30' name='title'>
+                <p>Description:</p>
+                    <input type='text' size='100' name='description'>
+                <p>Category</p>
+                    <select name='category_id'>
+                        {% for category in categories %}
+                            {% if category.id == categoryID %}
+                                <option value='{{category.id}}' selected>{{category.name}}</option>
+                            {% else %}
+                                <option value='{{category.id}}'>{{category.name}}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                    <p>
+                <input type='submit' value='Create'>
+                <a href={{url_for('items_list',categoryID = categoryID)}}>Cancel</a>
+                </p>
+                </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+{% endblock %}

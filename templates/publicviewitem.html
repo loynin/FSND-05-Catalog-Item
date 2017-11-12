@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <div class='set_content_width set_content_background'>    
+    <table>
+        <tr>
+            <th style="vertical-align:top">
+                <div class='main_display'>
+                <h2>{{item.title}}</h2>
+                        <p class='description_text'>
+                            {{item.description}}
+                        </p>
+                            <a href={{url_for('items_list',categoryID = categoryID)}}>Back</a>
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+
+{% endblock %}

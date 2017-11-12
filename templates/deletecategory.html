@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class='set_content_width set_content_background'>    
+    <table>
+        <tr>
+            <th style="vertical-align:top">
+                <div class='main_display'>
+                <h1>Delete Category</h1>
+                <h3> Are you sure you want to delete {{category.name}}? </h3>
+                    <form action="{{ url_for('deleteCategory', categoryID=category.id)}}" method = 'POST'>
+                    <input type='submit', value = 'Delete'>
+                    <a href= '{{url_for('category_admin')}}'>Cancel</a>   
+                    </p>                
+                </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+{% endblock %}

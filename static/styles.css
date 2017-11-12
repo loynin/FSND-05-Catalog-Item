@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    background-color: #eaecef;
+    width: 100%;
+    text-align:center;
+    margin:0px;
+    
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #1e1713;
+}
+
+h1,
+h2 {
+    font-family: 'georgia', serif;
+    margin: 0;
+}
+
+h1 {
+    border-bottom: 2px solid #eee;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+p,
+dd,
+dt {
+    color: ##18386b;
+}
+
+th {
+    vertical-align:top;
+    padding-left:10px;
+}
+
+a {
+    text-decoration: none;
+    color: #7a2a02;
+    font-size: .75em;
+}
+
+th, td {
+    padding: 0px;
+    text-align: left;
+}
+
+.logo{
+    width: 100%;
+    height: 32px;
+    background-color: #072047;
+    color: #ffffff;
+    padding-top:10px;
+    text-align:center;
+    font-size: 20px;
+}
+
+.set_content_width{
+    display:inline-block;
+    width:80%;
+    text-align:left;
+}
+
+.set_content_background{
+    background-color:#ffffff;
+    margin-top:10px;
+}
+
+.main_display{
+    width: 80%;
+    background-color: #ffffff;
+    color: #232120;
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:left;
+    float:left;
+
+}
+
+
+.category_display{
+    width: 250px;
+    background-color: #ffffff;
+    color: ##232120;
+    padding-top:10px;
+    padding-left:20px;
+    text-align:left;
+    float:left;
+
+}
+
+
+.item_display{
+    width: 100%;
+    background-color: #ffffff;
+    color: ##232120;
+    padding-top:10px;
+    padding-left:20px;
+    text-align:left;
+    float:right;
+
+}
+
+.login_button{
+    float:right;
+    background-color:#c63403;
+    width:50px;
+    height:18px;
+    text-align:center;
+    padding-top:5px;
+    font-size:10px;
+}
+
+.set_vertical_line{
+    margin-top:10px;
+    vertical-align:top;
+    width:2px;
+    border-left:1px solid #ff0000;
+}
+
+.description_text{
+    padding-left:15px;
+    font-size:12px;
+    text-align:left;
+    font-weight:normal;
+}
+
+.category_row{
+    background-color:#cdd2d8;
+    padding:15px;
+    margin-top:5px;
+    font-size:14px;
+    text-align:left;
+    font-weight:normal;
+}

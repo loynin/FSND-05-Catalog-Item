@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class='set_content_width set_content_background'>    
+    <table>
+        <tr>
+            <th style="vertical-align:top">
+                <div class='category_display'>
+                <h1>Website Link</h1>
+                
+                    <p>These are important links for this website:</p>
+                    <p><a href='{{url_for('category_list')}}'> Home</a> </p>
+                    {% if user_logged %}
+                    <p>Login </p>
+                    {% else %}
+                    <p><a href='{{url_for('showLogin')}}'> Login</a> </p>
+                    {% endif %}
+                    <p><a href='{{url_for('category_admin')}}'> Admin</a> </p>
+               
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+{% endblock %}

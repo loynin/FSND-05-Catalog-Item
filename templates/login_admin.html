@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class='set_content_width set_content_background'>    
+    <table style='width:100%'>
+        <tr>
+            <th style="vertical-align:top; padding:20px">
+                <div class='set_content_width'>
+                <h1>Admin Account Authentication</h1>
+                    <form action="{{url_for('admin_auth' , user_id = user_id)}}" method = 'post'>
+                    <p> Your account is not authorized as an administrator account. Please contact website administrator for authorization code.
+                        <p>Authorization Code:</p>
+                            <input type='text' size='30' name='auth_code' value=''>
+                       
+                            <p>
+                        <input type='submit' value='Authorize'>
+                        </p>
+                    </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+    </div>
+{% endblock %}

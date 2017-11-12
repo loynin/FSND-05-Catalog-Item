@@ -1,0 +1,12 @@
+<div class='logo'>
+    <div class='set_content_width'>
+        <a href="{{url_for('category_list')}}" class='logo'>
+        Catalog App
+        </a>
+        {% if user_logged %}
+        <a href="{{url_for('disconnect')}}" class='login_button'>Logout</a>
+        {% else %}
+        <a href="{{url_for('showLogin')}}" class='login_button'>Login</a>
+        {% endif %}
+    </div>    
+</div>
