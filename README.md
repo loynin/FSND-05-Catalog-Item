@@ -63,6 +63,8 @@ run the code of the project:
    - Visit the website by `http://localhost:5000/cagetories/`
    	  for admin (the ability to add, edit, or delete categories) visit 
    	   `http://localhost:5000/categories/admin/`
+   - To get JSON data request using this link 
+   	`http://localhost:5000/categories/JSON/`
 	   
 -----------------------------
 4. Credit
