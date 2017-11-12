@@ -62,7 +62,7 @@ run the code of the project:
    		`python lotofitem.py`    
    - Run the project by using command:
       	`python project.py`
-   - Visit the website by 'http://localhost:5000/cagetories/`
+   - Visit the website by `http://localhost:5000/cagetories/`
    	  for admin (the ability to add, edit, or delete categories) visit 
    	   `http://localhost:5000/categories/admin/`
 
