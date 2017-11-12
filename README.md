@@ -8,9 +8,8 @@ Content
 3. How to Run the Project
 4. Credit
 
-
-1. Project Description:
 -----------------------
+1. Project Description:
 
 Item Catalog project is a website that used database to store the data of categories,
 items, and users. The website has the following features:
@@ -18,9 +17,8 @@ items, and users. The website has the following features:
 	b. Use third-party authentication: facebook and google for authentication and 
 		authorization of changing data on the website
 
-
-2. Structure of Project Files
 -----------------------------
+2. Structure of Project Files
 
 - static (directory): use to store static file such as styleset
 	- styles.css: is a styleset file uses to styling the website
@@ -48,9 +46,9 @@ items, and users. The website has the following features:
 - lotofitem.py: create sample items into database
 - project.py: the main file of the project
 - readme.txt: this file
-      
+
+-----------------------------
 3. How to Run the Project
--------------------------
 
 Before running the code or create the tables, there will be a need to create 
 database first. In this project, follow these steps in order to successfully 
@@ -65,9 +63,9 @@ run the code of the project:
    - Visit the website by `http://localhost:5000/cagetories/`
    	  for admin (the ability to add, edit, or delete categories) visit 
    	   `http://localhost:5000/categories/admin/`
-
+	   
+-----------------------------
 4. Credit
----------
 
 Part of the code from this project are from udacity.com lesson
    
